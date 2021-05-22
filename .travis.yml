@@ -1,0 +1,36 @@
+branches:
+  only: 
+  - master
+sudo: false
+dist: trusty
+language: node_js
+node_js:
+  - "node"
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+    - openjdk-7-jdk
+    - lib32stdc++6
+    - lib32z1
+env:
+  CXX=g++-4.8
+  
+android:
+  components:
+    - build-tools-26.0.2
+    - android-26
+    - platform-tools
+	- extra-android-support
+	- extra-android-m2repository
+	- extra-google-m2repository
+	
+install:
+  - npm install -g @ionic/cli@latest
+  - npm install
+  
+script:
+  - ionic capacitor build android
