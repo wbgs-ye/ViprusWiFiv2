@@ -25,7 +25,7 @@ before_install:
   - export PATH=$PATH:$ANDROID_HOME/tools
   - export PATH=$PATH:$ANDROID_HOME/platform-tools
   - export ANDROID_SDK_ROOT=$ANDROID_HOME
-  - ./sdkmanager --sdk_root=${ANDROID_HOME} "tools"
+  - yes | ./sdkmanager --sdk_root=${ANDROID_HOME} "tools"
   - ./sdkmanager --update
   - cd ~
   - apt install gradle
