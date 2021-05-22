@@ -3,10 +3,7 @@ dist: trusty
 language: android
 node_js:
   - "node"
-before_install:
-  - chmod +x android/gradlew
-  - nvm install --lts
-  - npm install -g @ionic/cli@latest
+
 addons:
   apt:
     sources:
@@ -21,16 +18,20 @@ env:
     - CXX=g++-4.9
 android:
   components:
-    - build-tools-30.0.0
-    - android-30
+    - tools
     - platform-tools
+    - tools
+    - build-tools-30.0.3
+
     - extra-android-support
     - extra-android-m2repository
     - extra-google-m2repository
-  licenses:
-    - 'android-sdk-preview-license-.+'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+
+before_install:
+  - yes | sdkmanager "platforms;android-30"
+  - chmod +x android/gradlew
+  - nvm install --lts
+  - npm install -g @ionic/cli@latest
 install:
   - npm install
 script:
