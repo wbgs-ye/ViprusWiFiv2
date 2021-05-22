@@ -40,4 +40,4 @@ script:
   - ionic build
   - npx cap sync android
   - cd android
-  - ./gradlew clean assembleDebug
+  - ./gradlew clean assembleWithoutNNUEDebug
