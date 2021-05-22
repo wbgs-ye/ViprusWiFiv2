@@ -5,6 +5,8 @@ node_js:
   - "node"
 addons:
   apt:
+  sources:
+    - ubuntu-toolchain-r-test
     packages:
     - g++-4.9
     - lib32stdc++6
