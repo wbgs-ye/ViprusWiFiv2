@@ -12,7 +12,7 @@
       </div>
       <div id="bg">
         <div id="main">
-          <ion-button size="large" id="setup">New Viprus Link</ion-button>
+          <ion-button size="large" id="setup">New Link</ion-button>
         </div>
         <div class="row" id="row2">
           <ion-button id="opt" color="light"><ion-icon :icon="pricetagOutline"></ion-icon> Read<br /> Link</ion-button>
