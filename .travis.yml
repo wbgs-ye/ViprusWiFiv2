@@ -28,7 +28,7 @@ before_install:
   - yes | ./sdkmanager --sdk_root=${ANDROID_HOME} "tools"
   - ./sdkmanager --update
   - cd ~
-  - apt install gradle
+  - sudo apt install gradle
   - chmod +x android/gradlew
   - npm install -g @ionic/cli@latest
 install:
