@@ -1,6 +1,6 @@
 os: linux
 dist: trusty
-language: node_js
+language: android
 node_js:
   - "node"
 before_install:
