@@ -33,7 +33,6 @@ before_install:
   - chmod +x android/gradlew
   - npm install -g @ionic/cli@latest
 install:
-  - sdkmanager "build-tools;30.0.3" "platform-tools" "platforms;android-30" "tools"
   - yes | sdkmanager --licenses
   - npm install
 script:
