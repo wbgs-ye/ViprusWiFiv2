@@ -5,7 +5,7 @@ node_js:
   - "node"
 before_install:
   - chmod +x android/gradlew
-  - nvm install --latest-npm
+  - nvm install --lts
   - npm install -g @ionic/cli@latest
 addons:
   apt:
