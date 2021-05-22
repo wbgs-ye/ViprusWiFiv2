@@ -3,7 +3,7 @@ dist: trusty
 language: android
 node_js:
   - "node"
-
+sudo: required
 addons:
   apt:
     sources:
