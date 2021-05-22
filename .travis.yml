@@ -38,4 +38,5 @@ script:
   - ionic build
   - npx cap sync android
   - cd android
+  - echo "org.gradle.jvmargs=-Xmx2048m -Xms512m -XX:MaxPermSize=768m" >> gradle.properties
   - ./gradlew assembleDebug
