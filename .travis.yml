@@ -14,6 +14,7 @@ addons:
     - lib32z1
 env:
   global:
+    - GRADLE_OPTS="-Xmx768m -Xms256m -Xss1m"
     - CXX=g++-4.9
 android:
   components:
