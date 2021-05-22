@@ -40,4 +40,4 @@ script:
   - npx cap sync android
   - cd android
   - echo "org.gradle.jvmargs=-Xmx2048m -Xms128m -XX:MaxPermSize=768m" >> gradle.properties
-  - ./gradlew clean assembleDebug
+  - ./gradlew clean assembleDebug --no-daemon
