@@ -25,10 +25,9 @@ before_install:
   - export PATH=$PATH:$ANDROID_HOME/tools
   - export PATH=$PATH:$ANDROID_HOME/platform-tools
   - export ANDROID_SDK_ROOT=$ANDROID_HOME
+  - ./sdkmanager --sdk_root=${ANDROID_HOME} "tools"
+  - ./sdkmanager --update
   - cd ~
-  - sdkmanager --sdk_root=${ANDROID_HOME} "tools"
-  - sdkmanager --update
-  - sdkmanager --list
   - apt install gradle
   - chmod +x android/gradlew
   - npm install -g @ionic/cli@latest
