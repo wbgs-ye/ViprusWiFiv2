@@ -15,7 +15,7 @@ addons:
 env:
   global:
     - CXX=g++-4.9
-    - GRADLE_OPTS='-XX:+UseG1GC -XX:MaxGCPauseMillis=1000 -Dorg.gradle.jvmargs="-Xmx2048m -XX:MaxPermSize=1024m -XX:ReservedCodeCacheSize=440m -XX:+UseCompressedOops -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" -Dorg.gradle.parallel=false -Dorg.gradle.daemon=false -Dorg.gradle.configureondemand=true'
+    - GRADLE_OPTS='-XX:+UseG1GC -XX:MaxGCPauseMillis=1000 -Dorg.gradle.jvmargs="-Xmx1024m -XX:MaxPermSize=512m -XX:ReservedCodeCacheSize=440m -XX:+UseCompressedOops -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" -Dorg.gradle.parallel=false -Dorg.gradle.daemon=false -Dorg.gradle.configureondemand=true'
 before_install:
   - wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
   - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
